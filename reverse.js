@@ -39,12 +39,11 @@ var rP = function() {
             }
         };
 
-        if (!fonts[type]) return input; // Retourner le texte d'origine si le type n'est pas valide
+        if (!fonts[type]) return input; 
 
         let output = input;
         const { searches, replaces } = fonts[type];
 
-        // Remplacer chaque caractère spécifique par le caractère conventionnel
         replaces.forEach((replaceChar, index) => {
             const searchChar = searches[index];
             const regex = new RegExp(replaceChar, "g");
