@@ -55,8 +55,8 @@ var rP = function() {
     }
 
     function setTextBoxValue(text) {
-        var textarea = document.querySelector('textarea');
-        textarea.value = text;
+        var textarea = document.querySelector('#reverse-output');
+        textarea.textContent = text;
     }
 
     function init() {
